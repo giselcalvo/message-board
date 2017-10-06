@@ -1,0 +1,57 @@
+<header>
+
+
+<ul>
+	<li class="welcome">Biology 201 | Q&A board</li>
+  <li><a (click)="logout()" >Logout</a></li>
+  <li><a href="#news">New Answers</a></li>
+  <li><a href="#contact">Profile</a></li>
+  <li><a [routerLink]="['/new_question']">Add Question </a></li>
+  <li><a  class="active" [routerLink]="['/']" >Home</a></li>
+
+</ul>
+
+</header>
+<!-- <p class="welcome">Welcome {{currentUser.name}} !</p> -->
+
+<div class="container">
+
+
+<div class="well" > 
+
+	<p id="search" class="addQuestion">Search <input type="text" name="search"
+	[(ngModel)]="searchTerm" #search= "ngModel" (keyup)="searchQuestions()">
+</p>
+</div>
+
+<div class="well">
+<div class="card" *ngFor="let question of questions">
+	<p><a class="questions" [routerLink]="['/question', question._id]">{{question.title}}</a></p>
+	<p class="details" >Submitted by <a class="q-links" href="">{{question.user}}</a> on  {{question.createdAt | date: "MM/dd/yyyy 'at' h:mma"}} | 
+		<a class="q-links" [routerLink]="['/question', question._id]">{{question["answers"].length}} answers</a> </p>
+		<hr>
+</div>
+
+</div>
+
+<!-- <table>
+	<tr>
+		<th>Questions</th>
+		<th>Answers</th>
+		<th>Action</th>
+	</tr>
+	<tr *ngFor="let question of questions">
+		<td>{{question.title}}</td>
+		<td><span class="center" >{{question["answers"].length}}</span></td>
+		<td><a [routerLink]="['/question', question._id]" >Show</a> 
+
+			<a [routerLink]="['/question', question._id, 'new_answer']">Answer</a></td>
+
+	</tr>
+</table> -->
+
+
+</div>
+<!-- <p>Name: {{currentUser.name}}</p>
+<p>Email: {{currentUser.email}}</p>
+<p>Username: {{currentUser.username}}</p> -->

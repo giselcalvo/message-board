@@ -1,0 +1,79 @@
+<body>
+<header>
+
+
+<ul>
+	<li class="welcome">Biology 201 | Q&A board</li>
+ <!--  <li><a (click)="logout()" >Logout</a></li>
+  <li><a href="#news">New Answers</a></li>
+  <li><a href="#contact">Profile</a></li>
+  <li><a [routerLink]="['/new_question']">Add Question </a></li>
+  <li><a  class="active" [routerLink]="['/']" >Home</a></li> -->
+
+</ul>
+
+</header>
+
+<div id="content">
+
+<h1>Login</h1>
+<div id="login" class="container">
+  
+  <form (submit)="login()">
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" [(ngModel)]="user.email" #email= "ngModel">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd" [(ngModel)]="user.password" #password= "ngModel">
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" name="remember"> Remember me</label>
+    </div>
+    <button id="login-btn" type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>
+
+
+<h1>Register</h1>
+<div id="login" class="container">
+  
+  <form (submit)="register()">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" class="form-control" id="Name" placeholder="Enter name" name="name" required [(ngModel)]="newUser.name" #name="ngModel">
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" [(ngModel)]="newUser.email" #email= "ngModel">
+    </div>
+
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="password" [(ngModel)]="newUser.password" #password= "ngModel">
+    </div>
+
+    <div class="form-group">
+      <label for="pwd">Confirm Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="passwordConfirmation" [(ngModel)]="newUser.passwordCofirmation" #passwordConfirmation= "ngModel">
+    </div>
+
+
+    <button id="login-btn" type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>
+
+
+	
+
+
+
+<!-- <p *ngIf="name.errors">Name is required</p> -->
+
+<!-- {{name.errors | json}} -->
+
+</div>
+
+</body>

@@ -1,0 +1,15 @@
+.answer{
+	width: 70%;
+	margin: auto;
+	display: block;
+}
+.answer-button{
+	float: right;
+	display: block;
+}
+
+.answer-box{
+	margin-left: 20%;
+	margin-right: 20%;
+	 
+}

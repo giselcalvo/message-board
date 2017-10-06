@@ -1,0 +1,113 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /*background-color: #333;*/
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: #111;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: black;
+}
+
+.welcome{
+	font-size: 20px;
+	display: block;
+    color: #111;
+    float: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+
+
+body{
+	/*background-image: url("https://images.pexels.com/photos/248152/pexels-photo-248152.jpeg?w=940&h=650&auto=compress&cs=tinysrgb");
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
+	padding: 0;*/
+
+}
+html{
+	margin: 0;
+	padding: 0;
+}
+
+table{
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    align-content: center;
+}
+input{
+	width: 150px;
+}
+
+/*#labels{
+	width: 29%;
+}*/
+
+form{
+    width: 100%;
+    margin: auto;
+
+}
+#content{
+	margin-left: 20%;
+	margin-right: 20%;
+
+	
+}
+
+#title{
+	text-align: center;
+}
+.right{
+	float: right;
+}
+h1{
+	text-align: center;
+	display: block;
+}
+h5{
+	text-align: center;
+}
+input{
+	width: 100%;
+
+}
+
+label{
+	text-align: center;
+	display: block;
+}
+
+#login{
+	width: 250px;
+	display: inline-block;
+	vertical-align: top;
+	background-color: white;
+	border-radius: 15px;
+	border: 1px solid lightgrey;
+	display: flex;
+	padding:20px;
+	box-shadow: 2px 2px 5px rgba(39, 18, 18, 0.27);
+}
+
+#login-btn{
+	width: 100%;
+}
+

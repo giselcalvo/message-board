@@ -1,0 +1,18 @@
+body{
+	backgroud-image: url("https://static.pexels.com/photos/3003/telescope-science-discover-world.jpg");
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	margin: 0;
+	padding: 0;
+}
+
+header{
+	margin: 0;
+	padding: 0;
+}
+li a:hover:not(.active) {
+    background-color: black !important;
+}
